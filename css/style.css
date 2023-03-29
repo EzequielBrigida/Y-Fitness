@@ -1,0 +1,420 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url('/image/victor-freitas-WvDYdXDzkhs-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+header {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(16, 16, 16, 0.5);
+}
+
+.headerContainer {
+    width: 1300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.logo h1 {
+    font-family: 'teko', sans-serif;
+    font-size: 3.125rem;
+    color: white;
+    transition: all 0.5s;
+}
+.logo h1:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+.navigation ul {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+.navigation li, .navigation a {
+    font-size: 18px;
+    color: white;
+    font-family: 'ubuntu', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid transparent;
+    transition: all 0.5s;
+}
+.navigation li:hover {
+    border-bottom: 2px solid white;
+    
+}
+
+
+.button-header a{
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'ubuntu', sans-serif;
+    color: white;
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 10px 25px;
+    transition: all 0.5s;
+}
+.button-header a:hover {
+    color: #1C434B;
+    background-color: white;
+    cursor: pointer;
+}
+
+
+.bannerContainer {
+    position: relative;
+    width: 100vw;
+    height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 90px;
+    background-color: rgba(16, 16, 16, 0.5);
+}
+
+.bannerContainer .text1 {
+    font-size: 150px;
+    font-family: 'teko', sans-serif;
+    color: white;
+    animation: fade-in ease-in-out 1s;
+}
+.bannerContainer .text2 {
+    font-size: 30px;
+    font-family: 'ubuntu', sans-serif;
+    color: white;
+    animation: fade-in ease-in-out 1s;
+}
+
+.buttonBanner {
+    animation: fade-in ease-in-out 1s;
+}
+.buttonBanner a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-family: 'ubuntu', sans-serif;
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 20px 70px;
+    position: relative;
+    top: 20px;
+    transition: all 0.5s;
+}
+.buttonBanner a:hover {
+    color: #1C434B;
+    background-color: white;
+}
+
+@keyframes fade-in {
+    from {
+        transform: translateY(40px);
+        opacity: 0;
+        
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.logoWhatsapp {
+    width: 70px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.knowledgSection {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.titleKnowledg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    bottom: 50px;
+}
+.titleKnowledg h2 {
+    font-family: 'teko', sans-serif;
+    font-size: 35px;
+    letter-spacing: 6px;
+    color: #101010;
+}
+.titleKnowledg h3 {
+    font-family: 'teko', sans-serif;
+    font-size: 50px;
+    background-image: linear-gradient(to right, #1c434b, #23525c, #2b626d, #33727e, #3b8290);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cardsKnowledgContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.cardKnowledg {
+    width: 300px;
+    height: 400px;
+    padding: 30px;
+    box-shadow: 0 1px 5px 0px rgba(16, 16, 16, 0.1);
+    border: 2px solid transparent;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: white;
+    transition: all 0.5s;
+}
+.cardKnowledg:hover {
+    border: 2px solid #3b8290;
+}
+.cardKnowledg div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.cardKnowledg div h2 {
+    font-family: 'teko', sans-serif;
+    font-size: 30px;
+    color: #101010;
+    line-height: 30px;
+    text-align: center;
+}
+.cardKnowledg div p {
+    text-align: center;
+    line-height: 21px;
+    font-family: 'unbuntu', sans-serif;
+}
+
+.cardKnowledg img {
+    width: 80px;
+}
+
+.knowledgSection2 {
+    width: 100vw;
+    height: 80vh;
+    background-image: url('/image/victor-freitas-vjkM-0m34KU-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.knowledgSection2Container {
+    width: 100%;
+    height: 80vh;
+    background-color: rgba(16, 16, 16, 0.6);
+    display: flex;
+    align-items: center;
+}
+
+.textKnowledgContainer {
+    width:55%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    padding-left:150px;
+}
+.textKnowledgContainer h2 {
+    font-family: 'teko', sans-serif;
+    font-size: 35px;
+    letter-spacing: 6px;
+    color: white;
+}
+.textKnowledgContainer h3 {
+    font-family: 'teko', sans-serif;
+    font-size: 50px;
+    color: white;
+}
+.textKnowledgContainer p {
+    font-size: 18px;
+    font-family: 'unbuntu', sans-serif;
+    text-align: justify;
+    line-height: 27px;
+    color: white;
+}
+.moreButton {
+    position: absolute;
+    bottom: 100px;
+}
+.moreButton a {
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'unbuntu', sans-serif;
+    color: white;
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 10px 40px;
+    transition: all 0.5s;
+}
+.moreButton a:hover {
+    background-color: white;
+    color: #1C434B;
+}
+
+
+.numbersKnowledg {
+    height: 80vh;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.numbersKnowledgWrap1, .numbersKnowledgWrap2 {
+    display: flex;
+    justify-content: space-between;
+    gap: 35px;
+    width: 350px;
+}
+
+.numbersKnowledgWrap1 div, .numbersKnowledgWrap2 div {
+    line-height: 40px;
+    text-align: left;
+}
+.numbersKnowledgWrap1 div h2, .numbersKnowledgWrap2 div h2 {
+    font-family: 'teko', sans-serif;
+    font-size: 50px;
+    background-image: linear-gradient(to right top, #bababa, #cbcbcb, #dcdcdc, #ededed, #ffffff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+.numbersKnowledgWrap1 div h3, .numbersKnowledgWrap2 div h3 {
+    font-family: 'teko', sans-serif;
+    font-size: 35px;
+    color: white;
+}
+
+.servicesSection {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px;
+    gap: 50px;
+}
+
+.servicesContainer {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.servicesCards {
+    width: 300px;
+    height: 400px;
+    padding: 30px;
+    box-shadow: 0 1px 5px 0px rgba(16, 16, 16, 0.1);
+    border: 2px solid transparent;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    transition: all 0.5s;
+}
+.servicesCards:hover {
+    border: 2px solid #3b8290;
+    transform: scale(1.1);
+}
+
+.servicesCards h2 {
+    font-family: 'teko', sans-serif;
+    font-size: 30px;
+    color: white;
+    line-height: 30px;
+    text-align: center;
+}
+
+.servicesCards p {
+    text-align: center;
+    line-height: 21px;
+    font-family: 'unbuntu', sans-serif;
+    color: white;
+}
+.titleServices {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titleServices h2{
+    font-family: 'teko', sans-serif;
+    font-size: 35px;
+    letter-spacing: 6px;
+    color: #101010;
+}
+
+.titleServices h3 {
+    font-family: 'teko', sans-serif;
+    font-size: 50px;
+    background-image: linear-gradient(to right, #1c434b, #23525c, #2b626d, #33727e, #3b8290);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.personalTrainerBackground {
+    background-image: url('/image/graham-mansfield-9faBzIlnV14-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.lessonGroup {
+    background-image: url('/image/victor-freitas-nlZTjUZX2qo-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.marcialBackground {
+    background-image: url('/image//nathan-dumlao-YQg2wxJAINQ-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.nutriBackground {
+    background-image: url('/image/katie-smith-uQs1802D0CQ-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
